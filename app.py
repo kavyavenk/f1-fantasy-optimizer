@@ -2,7 +2,7 @@ import streamlit as st
 from itertools import combinations
 from PIL import Image
 
-st.set_page_config(page_title="F1 Fantasy League Optimizer", layout="wide")
+st.set_page_config(page_title="F1 Fantasy League Optimizer", layout="wide", page_icon="icon.png")
 
 st.image("logo.png", width=1000)
 
@@ -123,4 +123,4 @@ if optimal_teams:
             for constructor in team["constructors"]:
                 st.write(f"- {constructor['name']} - ${constructor['price']}M, {constructor['points']} points")
 else:
-    st.write("enter preferences to generate optimal teams within the budget")
+    st.write("Enter preferences to generate optimal teams within the budget:")
